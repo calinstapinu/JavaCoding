@@ -1,0 +1,8 @@
+# Ignorăm directoarele generate automat
+/out/
+/.idea/
+/*.iml
+
+# Ignorăm fișierele specifice sistemului de operare
+.DS_Store
+Thumbs.db
