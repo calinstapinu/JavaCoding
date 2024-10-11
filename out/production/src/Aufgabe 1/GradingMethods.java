@@ -1,9 +1,8 @@
-// GradeUtils.java
 import java.util.ArrayList;
 
 public class GradingMethods {
 
-    // Metoda pentru a returna notele insuficiente (mai mici de 40)
+    // Metoda pentru a returna notele insuficiente
     public static int[] getInsufficientGrades(int[] grades) {
         ArrayList<Integer> insufficientGrades = new ArrayList<>();
         for (int grade : grades) {
@@ -28,7 +27,7 @@ public class GradingMethods {
         return (double) sum / grades.length;
     }
 
-    // Metoda pentru a rotunji notele conform regulilor date
+    // Metoda pentru a rotunji notele
     public static int[] getRoundedGrades(int[] grades) {
         int[] roundedGrades = new int[grades.length];
         for (int i = 0; i < grades.length; i++) {
@@ -66,6 +65,4 @@ public class GradingMethods {
         }
         System.out.println();
     }
-
-
 }

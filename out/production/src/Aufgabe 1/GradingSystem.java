@@ -1,24 +1,23 @@
-// GradingSystem.java
 public class GradingSystem {
     public static void main(String[] args) {
-        // Exemplu de array de note
+
         int[] grades = {29, 37, 38, 41, 84, 67};
 
-        // 1. Afișarea notelor insuficiente
+        // 1
         int[] insufficientGrades = GradingMethods.getInsufficientGrades(grades);
         System.out.print("Note insuficiente: ");
         GradingMethods.printArray(insufficientGrades);
 
-        // 2. Afișarea mediei notelor
+        // 2
         double averageGrade = GradingMethods.calculateAverageGrade(grades);
         System.out.printf("Media notelor: %.2f%n", averageGrade);
 
-        // 3. Afișarea notelor rotunjite
+        // 3
         int[] roundedGrades = GradingMethods.getRoundedGrades(grades);
         System.out.print("Note rotunjite: ");
         GradingMethods.printArray(roundedGrades);
 
-        // 4. Afișarea notei maxime rotunjite
+        // 4
         int maxRoundedGrade = GradingMethods.getMaxRoundedGrade(grades);
         System.out.println("Nota maximă rotunjită: " + maxRoundedGrade);
     }
