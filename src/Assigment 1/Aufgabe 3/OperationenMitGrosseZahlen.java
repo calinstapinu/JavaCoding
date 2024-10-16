@@ -9,9 +9,10 @@ public class OperationenMitGrosseZahlen {
 
        for (int i = n-1; i >= 0; i--) {
            int sum = num1[i] + num2[i] + carry;
-           result[i] = sum % 10;
-           carry = sum / 10;
+           result[i] = sum % 10; // Store the last digit in the result
+           carry = sum / 10; // Calculate carry for the next iteration
        }
+       result[0] = carry;
        return result;
     }
 
