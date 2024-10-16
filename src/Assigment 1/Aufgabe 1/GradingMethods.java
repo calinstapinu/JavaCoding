@@ -58,6 +58,7 @@ public class GradingMethods {
         return maxGrade;
     }
 
+
     // Metoda pentru afișarea unui array
     public static void printArray(int[] array) {
         for (int element : array) {
